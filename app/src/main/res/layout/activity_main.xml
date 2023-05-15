@@ -29,8 +29,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/IndoorButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/button_style"
             android:text="재실"
@@ -41,8 +41,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/MeetingButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/button_style"
@@ -54,8 +54,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/EatButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="100dp"
             android:background="@drawable/button_style"
@@ -67,8 +67,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BusinessTripButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/button_style"
@@ -78,30 +78,57 @@
             app:layout_constraintStart_toEndOf="@id/EatButton"
             app:layout_constraintTop_toBottomOf="@id/MeetingButton" />
 
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/LeaveWorkButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:id="@+id/GyonaeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/button_style"
-            android:text="퇴근"
+            android:text="교내"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/EatButton" />
+            app:layout_constraintStart_toEndOf="@id/LectureButton"
+            app:layout_constraintTop_toBottomOf="@id/ConsultingButton" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ConsultingButton"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/button_style"
             android:text="상담"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/LeaveWorkButton"
+            app:layout_constraintStart_toEndOf="@id/OutingButton"
             app:layout_constraintTop_toBottomOf="@id/BusinessTripButton" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/OutingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_style"
+            android:text="외출"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EatButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LectureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_style"
+            android:text="강의"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EatButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

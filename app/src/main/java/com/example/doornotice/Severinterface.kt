@@ -1,11 +1,13 @@
 package com.example.doornotice
 
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.Field
 import retrofit2.http.POST
+import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface Severinterface {
-    @POST("/user/1")
-    fun updateUser(@Body user: User): Call<User>
+    @POST("/user/{id}")
+    fun updateUser(@Path("id") id: String, @Query("state") state: String): Call<User>
 }
